@@ -1,0 +1,242 @@
+	body {
+		background: url("fondo.jpg") repeat;  
+		margin: 0px;
+		padding: 0px;
+		font-size: 16px;
+		margin: 0 20% 0 20%; 
+		}
+	header {
+		height: 10%;
+		text-align: center;
+		display: block;
+/*		margin: 0 15% 0 15%;*/
+		border-bottom: 10px solid #77c76e;
+		}
+	.desaparece {
+		display: none;
+	}
+	header h1 {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	header h4 {
+	margin-top: 0;	
+	}
+	header img {
+		width: 6em;
+		display: inline;
+		margin-top: 1em;
+		margin-bottom: 1em; 
+		}
+	header img:nth-child(12){
+		margin-left: 45px;
+	}
+	.cogemargen {
+		margin-left: 45px;
+		position: absolute;
+		z-index: 1;
+		display: inline;
+	}
+	.muevete {
+		position: absolute;
+		z-index: 1;
+		display: inline;
+	}
+	.muevete {
+
+	}
+	.muevete img:hover {
+		border-bottom: 5px solid #5e2511;
+		position: absolute;
+		z-index: 1;
+		margin-top: 40px; 
+	}
+	.cogemargen img:hover {
+		border-bottom: 5px solid #5e2511;
+		position: absolute;
+		z-index: 1;
+		margin-top: 40px; 
+	}
+
+	nav {
+		background: #5e2511;
+/*		margin: 0 15% 0 15%;*/
+/*		border-radius: 50%;*/
+	}
+	ul {
+		color: white;
+		margin: 0;
+		padding: 0;
+		padding: 5px;
+		text-align: center;
+	}
+	li {
+		display: inline;
+		border-left: 1px solid white; 
+		padding: 0 1em 0 1em;
+		font-size: 1.2em;
+	}
+	li:nth-child(1) {
+		border-left: 0; 
+	}
+	.goteo {
+/*		margin: 0 15% 0 15%;*/
+		background: url(goteo3.png) repeat-x;
+		height: 140px;
+		z-index: 1;
+		position: absolute;
+		width: 60%;
+		}
+	#main {
+	   height: 80%;
+	   display: -webkit-flex;
+	   display:         flex;
+	   flex-flow: row;
+/*	   margin: 0 15% 0 15%;*/
+
+	}
+	section {
+/*		background: #CFC;*/
+		flex: 3 1 60%;
+		order: 1;
+		height: 700px;
+
+		
+	}
+	#main section article{
+		background: #c0d530;
+		width: 100%;
+		height: 100%;
+	}
+	#main aside {
+		background: #CCF;
+		flex: 1 6 20%;
+		order: 2;
+	}
+	footer {
+		display: block;
+		min-height: 10%;
+		background: #FC6;
+/*		margin: 0 20% 0 20%;*/
+	}
+	/*Media Queries*/
+	/* Smartphones (portrait and landscape) ----------- device*/
+	@media only screen and (min-width : 320px) and (max-width : 480px) {
+		body {
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			border-bottom: 0;
+		}
+
+		.escondete, .muevete, .cogemargen {
+			display: none;
+		}
+		.desaparece {
+			display: block;
+		}
+		.desaparece img {
+			width: 100%;
+			margin: 0;
+			padding: 0;  
+		}
+		nav {
+			background: #ff8da1;
+		}
+		li {
+			border-left: 0;
+		}
+		li:hover{
+			background: #ff748c;
+		}
+		.goteo {
+			display: none;
+		}
+		#main aside {
+			display: none;
+		}
+
+	}
+
+			/* Smartphones (landscape) ----------- */
+	@media only screen and (min-width : 321px) {
+		body {
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			border-bottom: 0;
+			width: 100%;
+		}
+
+		.escondete, .muevete, .cogemargen {
+			display: none;
+		}
+		.desaparece {
+			display: block;
+		}
+		.desaparece img {
+			width: 100%;
+			margin: 0;
+			padding: 0;  
+		}
+		nav {
+			background: #ff8da1;
+		}
+		li {
+			border-left: 0;
+		}
+		li:hover{
+			background: #ff748c;
+		}
+		.goteo {
+			display: none;
+		}
+		#main aside {
+			display: none;
+		}
+
+	}
+
+	/* Smartphones (portrait) ----------- */
+	@media only screen and (max-width : 320px) {
+		body {
+			font-weight: bold;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			border-bottom: 0;
+			width: 100%;
+		}
+
+		.escondete, .muevete, .cogemargen {
+			display: none;
+		}
+		.desaparece {
+			display: block;
+		}
+		.desaparece img {
+			width: 100%;
+			margin: 0;
+			padding: 0;  
+		}
+		nav {
+			background: #ff8da1;
+		}
+		li {
+			border-left: 0;
+		}
+		li:hover{
+			background: #ff748c;
+		}
+		.goteo {
+			display: none;
+		}
+		#main aside {
+			display: none;
+		}
+	}
