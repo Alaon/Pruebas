@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Número Aleatorio</title>
+</head>
+<body>
+	<p><script type="text/javascript">
+	var x = Math.floor(Math.random() * 3 + 1);
+	var y = prompt("Nuestro juego consiste en adivinar un número elegido al azar del 1 al 3 ¿Eres capaz de adivinarlo? Pues introduce el número que crees que ha salido. Mucha suerte!!!!");
+	var z = parseInt(y);
+	aleatorio(x, z);
+	function aleatorio(num, alea){
+		if (num === alea){
+			document.write("FELICIDADES!!! El número " + alea +" es el correcto.");
+		}
+		else if(alea > 3 || alea === 0 || alea < 0) {
+			document.write("Disculpa, el número que has elegido " + alea + " no es valido, vuelve a intentarlo elegiendo un número del 1 al 3.");
+		}
+		else {
+			document.write("Lo sentimos, el número elegido al azar es " + num  +" y el número que has elegido es " + alea + ".");
+		}
+	}
+	// document.write(typeof x);
+	// document.write(typeof z);
+	</script></p>
+	<p><a href="https://alaon.neocities.org/aleatorio.html">Volver a Intentar</a></p>
+</body>
+</html>
